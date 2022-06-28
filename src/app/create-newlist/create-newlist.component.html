@@ -1,0 +1,32 @@
+
+<mat-dialog-content>
+  
+    <mat-form-field>
+        <input matInput #name
+                placeholder="Name"
+                (input)="onNameChange(name.value)">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput #weight
+              
+              placeholder="Weight"
+              (input)="onWeightChange(weight.value)"
+             
+             >
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput #symbol
+            
+            placeholder="Symbol"
+            (input)="onSymbolChange(symbol.value)"
+           
+            >
+</mat-form-field>
+      
+ 
+</mat-dialog-content>
+
+<mat-dialog-actions>
+    <button class="mat-raised-button"(click)="close()">Close</button>
+    <button class="mat-raised-button mat-primary"(click)="addNewItem()">Save</button>
+</mat-dialog-actions>
